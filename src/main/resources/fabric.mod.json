@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "macecombo",
+	"version": "${version}",
+	"name": "Mace Combo",
+	"description": "Shows a customizable overlay and chat message when you disable a shield then mace smash within 3 seconds. INS key opens ClickGUI.",
+	"authors": [
+		"ben"
+	],
+	"contact": {
+		"sources": "https://github.com/ben757119-cmyk/MaceCombo"
+	},
+	"license": "MIT",
+	"icon": "assets/macecombo/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.ben.macecombo.MaceCombo"
+		],
+		"client": [
+			"com.ben.macecombo.client.MaceComboClient"
+		]
+	},
+	"mixins": [
+		"macecombo.mixins.json",
+		{
+			"config": "macecombo.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

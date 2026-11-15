@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "com.ben.macecombo.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"ClientPlayerInteractionManagerMixin",
+		"LivingEntityMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
